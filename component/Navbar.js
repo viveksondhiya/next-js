@@ -16,7 +16,7 @@ function Navbar({searchQuery , setSearchQuery , setAlertMessage}){
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify({ids : checkedIds})
         }
-        const response = await fetch("http://localhost:3000/api/users/deleteMulti",requestOptions);
+        const response = await fetch("/api/users/deleteMulti",requestOptions);
         const data = await response.json();
         if("ids" in data){
             setAlertMessage("Data deleted successfully");
