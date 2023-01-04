@@ -70,7 +70,8 @@ function Layout(){
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify(editUser)
         }
-        const response = await fetch("/api/users/"+editUser.id,requestOptions);
+        var server = process.env.SERVER ;
+        const response = await fetch(`${server}/api/users/`+editUser.id,requestOptions);
         const data = await response.json();
         if(data){
             setAlertMessage("Data edited successfully");
@@ -93,7 +94,8 @@ function Layout(){
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify(saveUser)
         }
-        const response = await fetch("/api/users/",requestOptions);
+        var server = process.env.SERVER ;
+        const response = await fetch(`${server}/api/users/`,requestOptions);
         const data = await response.json();
         // console.log(data);
         setSaveUser({
@@ -120,7 +122,8 @@ function Layout(){
         const requestOptions = {
             method : "DELETE"
         }
-        const response = await fetch("/api/users/"+userId,requestOptions);
+        var server = process.env.SERVER ;
+        const response = await fetch(`${server}/api/users/`+userId,requestOptions);
         const data = await response.json();
         if(data){
             setAlertMessage("Data deleted successfully");

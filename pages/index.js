@@ -34,7 +34,8 @@ export default function Home({users}) {
 
 export async function getServerSideProps(){
 
-  const response = await fetch("/api/users");
+  var server = process.env.SERVER ;
+  const response = await fetch(`${server}/api/users`);
   const data = await response.json();
 
   return {

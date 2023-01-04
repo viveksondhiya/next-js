@@ -5,7 +5,8 @@ function User({user , setEditUser , handleDelete , checkedAll , setCheckedAll}){
 
 
     async function fetchUser(){
-        const response = await fetch("/api/users/"+user.id);
+        var server = process.env.SERVER ;
+        const response = await fetch(`${server}/api/users/`+user.id);
         const data = await response.json();
         // console.log(data);
         setEditUser(data);
