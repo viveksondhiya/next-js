@@ -1,5 +1,5 @@
 import { useEffect , useContext, useState } from "react";
-import CheckedUser from "../context/checkedUser";
+import CheckedUser from "context/checkedUser";
 
 function User({user , setEditUser , handleDelete , checkedAll , setCheckedAll}){
 

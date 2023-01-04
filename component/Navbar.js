@@ -1,6 +1,6 @@
 import {useContext, useEffect} from 'react';
-import AppContext from '../context/appContext';
-import CheckedUser from '../context/checkedUser';
+import AppContext from 'context/appContext';
+import CheckedUser from 'context/checkedUser';
 
 function Navbar({searchQuery , setSearchQuery , setAlertMessage}){
 

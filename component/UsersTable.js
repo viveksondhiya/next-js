@@ -1,8 +1,8 @@
-import User from "./user";
+import User from "component/user";
 import {useEffect , useState} from 'react';
 import { useContext } from "react";
-import AppContext from "../context/appContext";
-import CheckedUser from "../context/checkedUser";
+import AppContext from "context/appContext";
+import CheckedUser from "context/checkedUser";
 
 function UsersTable({setEditUser , handleDelete , paginatedPosts}){
 
