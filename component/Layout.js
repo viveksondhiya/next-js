@@ -1,13 +1,13 @@
 import { useEffect,useState,useContext } from "react";
 import Alert from "./alert";
 import Navbar from "./navbar";
-import UsersTable from "./UsersTable";
+import UsersTable from "./usersTable";
 import {useRouter} from 'next/router';
-import AppContext from "../context/AppContext";
-import Pagination from "./Pagination";
-import { Paginate } from "../helpers/Paginate";
+import AppContext from "../context/appContext";
+import Pagination from "./pagination";
+import { Paginate } from "../helpers/paginate";
 import { SearchedResult } from "../helpers/search";
-import CheckedUser from '../context/CheckedUser';
+import CheckedUser from '../context/checkedUser';
 
 function Layout(){
 
