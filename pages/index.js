@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Layout from './component/layout';
-import AppContext from './context/appContext';
+import Layout from '../component/layout';
+import AppContext from '../context/appContext';
 import {useState} from 'react';
 
 export default function Home({users}) {
